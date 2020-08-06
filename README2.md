@@ -1,7 +1,7 @@
 ![image](https://user-images.githubusercontent.com/68961012/88884705-c06d2980-d269-11ea-9623-250678ee2120.png)
 
 # AWSHackcathon 
-MADD Technology aims to help ACRA resolve their current pain points in waiver appeal process. 
+MADD Technology aims to help ACRA resolve their pain points in the current waiver appeal process. 
 
 # Content Page 
 > 1. Prerequisites
@@ -13,19 +13,21 @@ MADD Technology aims to help ACRA resolve their current pain points in waiver ap
 Before you begin, ensure you have met the following requirements:
 
 - Fully functional AWS account(QuickSight Service/S3 Bucket Database)
-- Website(Submission purpose)
+- Registered Business with a valid UEN number 
+- Registered Telegram account
 
 # Installation & Set-Up
 
-- Install Dialogflow (URL: https://cloud.google.com/dialogflow/docs)
+- Register and created a Dialogflow account (URL: https://cloud.google.com/dialogflow/docs)
 - Installed Telegram (URL: https://desktop.telegram.org/)
 - Installed UIpath (URL: https://www.uipath.com/fr/start-trial)
+- Installed Visual Studio 2019 (URL: 
 
 # Solution
 
 ## Single Portal Submission(ChatBot)
 
-For Single Portal Submission(SPS), An agent will be created in the DialogFlow Console, and various intents will be created according to the required context. Within the created intent, training phases should be inserted, to train the dialog Flow agent in order to capture user's responses. We can also set this response to a binary Click-button option. Follwing the selection of option, a Prompt for submission will be created, and once the user clicks on the button, it will direct them to a web server which is directly connected to the database used for processing these appeal cases. System entities(Object identifier) should be created to validate the User's personal details for the appeal submission.
+For Single Portal Submission(SPS), An agent will be created in the DialogFlow Console, and various intents will be created according to the required context. Within the created intent, training phases should be inserted, to train the dialog Flow agent in order to capture user's responses. We can also set this response to a binary Click-button option. Following the selection of an option, a Prompt for submission will be created, and once the user clicks on the button, it will direct them to a web server which is directly connected to the database used for processing these appeal cases. System entities(Object identifier) should be created to validate the User's personal details for the appeal submission.
 
 Lastly, the dialog Flow agent will be linked to the telegram platform ChatBot. (Other chatbots can also be link. e.g Facebook messenger, twitter and Viber)
 
@@ -37,11 +39,11 @@ Step 4: Enable Fulfillment (Connecting the WebHook)
 
 ## Automated Decision Engine(RPA)
 
-For the Automated Decision Engine(ADE), UIpath will receive appeal cases from SPS. Then UIpath will filter all the cases. Those acceptable cases(Details fully filled up, with supporting documents) will be routed to AWS S3 Bucket and BizFile+ for further verification. Not acceptable cases will be sent back to SPS. SPS will then inform the customer on the information they need to fill up in the appeal form. 
+For the Automated Decision Engine(ADE), All new cases will be stored in Amazon S3 bucket. When the new cases is submitted, it will trigger the RPA process to start. Acceptable cases (Details fully filled up, with supporting documents) will be routed to officer for review. Nonacceptable cases will be rejected, and a rejection email will be sent to customer. 
 
 ## AI Analytic Dashboard(Amazon Quicksight) 
 
-For the AIAD, it is used by the ACRA officer to assist them in making judgement on appeal cases. The officer can just simply upload the business data provided by customer onto QuickSight, generate charts using the data. 
+The AI Analytic Dashboard (Amazon Quicksight) is used by the ACRA officer to assist them in making judgement on appeal cases. The implementation of Amazon Quicksight would help integrate datasets from different places and generate a more meaningful dashboard such as providing a glance view of the applicant's past performance. Different report can be generated to cater for different business need, E.G. drill down report or Department KPI. Relevant Data would be integrated and visualize using chart for the officer to make better and faster decision. 
 
 Charts for example: 
 
@@ -50,5 +52,5 @@ Charts for example:
 - Past Year Annual Income  by Case Number
 - Overview of past Appeal cases processing time and Status 
 
-From the above charts, it helps officers to make a final judgement on should they approve the case or reject it. 
+From the above charts, it helps officers to make a final judgement on should they approve the case or reject it.
 
