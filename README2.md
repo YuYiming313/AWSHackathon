@@ -31,10 +31,13 @@ For Single Portal Submission(SPS), An agent will be created in the DialogFlow Co
 
 Lastly, the dialog Flow agent will be linked to the telegram platform ChatBot. (Other chatbots can also be link. e.g Facebook messenger, twitter and Viber)
 
-Step 1: Create a Telegram Bot through @Botfather. (Insert image)
-Step 2: Copy the generated token number.
-Step 3: Paste the Token number into the dialog Flow Agent through the "integrations" tab.(Insert image)
-Step 4: Enable Fulfillment (Connecting the WebHook)
+- Step 1: Create a Telegram Bot through @Botfather. (Insert image)
+
+- Step 2: Copy the generated token number.
+
+- Step 3: Paste the Token number into the dialog Flow Agent through the "integrations" tab.(Insert image)
+
+- Step 4: Enable Fulfillment (Connecting the WebHook)
 
 
 ## Automated Decision Engine(RPA)
