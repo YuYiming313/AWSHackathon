@@ -21,7 +21,7 @@ Before you begin, ensure you have met the following requirements:
 - Register and created a Dialogflow account (URL: https://cloud.google.com/dialogflow/docs)
 - Installed Telegram (URL: https://desktop.telegram.org/)
 - Installed UIpath (URL: https://www.uipath.com/fr/start-trial)
-- Installed Visual Studio 2019 (URL: 
+- Installed Visual Studio 2019 (URL: https://code.visualstudio.com/download)
 
 # Solution
 
