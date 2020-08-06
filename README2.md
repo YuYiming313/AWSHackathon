@@ -35,14 +35,14 @@ Lastly, the dialog Flow agent will be linked to the telegram platform ChatBot. (
 
 - Step 2: Copy the generated token number.
 
-- Step 3: Paste the Token number into the dialog Flow Agent through the "integrations" tab.(Insert image)
+- Step 3: Paste the Token number into the dialog Flow Agent through the "integrations" tab.
 
 - Step 4: Enable Fulfillment (Connecting the WebHook)
 
 
 ## Automated Decision Engine(RPA)
 
-For the Automated Decision Engine(ADE), All new cases will be stored in Amazon S3 bucket. When the new cases is submitted, it will trigger the RPA process to start. Acceptable cases (Details fully filled up, with supporting documents) will be routed to officer for review. Nonacceptable cases will be rejected, and a rejection email will be sent to customer. 
+For the Automated Decision Engine(ADE), All new cases will be stored in Amazon S3 bucket. When the new cases is submitted, it will trigger the RPA process to start. Acceptable cases (Details fully filled up, with supporting documents) will be routed to officer for review. Non-Acceptable cases will be rejected, and a rejection email will be sent to customer. 
 
 ## AI Analytic Dashboard(Amazon Quicksight) 
 
@@ -55,7 +55,7 @@ Charts for example:
 - Past Year Annual Income  by Case Number
 - Overview of past Appeal cases processing time and Status 
 
-From the above charts, it helps officers to make a final judgement on should they approve the case or reject it.
+From the above charts, it helps officers to make a final judgement on whether they should approve the case or reject it.
 
 # Source code for Website 
 
